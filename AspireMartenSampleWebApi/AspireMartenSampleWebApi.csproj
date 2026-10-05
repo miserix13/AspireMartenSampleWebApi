@@ -20,6 +20,7 @@
   <ItemGroup>
     <PackageReference Include="Aspire.Npgsql" Version="13.6.0" />
     <PackageReference Include="Marten" Version="9.46.0" />
+    <PackageReference Include="Marten.AspNetCore" Version="9.46.0" />
   </ItemGroup>
 
   <ItemGroup>
