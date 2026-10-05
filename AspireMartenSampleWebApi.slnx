@@ -1,4 +1,5 @@
 <Solution>
+  <Project Path="AppHost1/AppHost1.csproj" Id="b6c10ac5-801f-4ed9-b070-de89837ffab1" />
   <Project Path="AspireMartenSampleWebApi/AspireMartenSampleWebApi.csproj" />
   <Project Path="ServiceDefaults1/ServiceDefaults1.csproj" />
 </Solution>
