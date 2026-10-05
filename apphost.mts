@@ -12,6 +12,6 @@ const builder = await createBuilder();
 const postgres = await builder.addPostgres("postgres").withDataVolume();
 const marten = await postgres.addDatabase("marten");
 
-const api = await builder.addProject("api", "./AspireMartenSampleWebApi").withReference(marten).waitFor(marten);
+const api = await builder.addProject("api", "../AspireMartenSampleWebApi/AspireMartenSampleWebApi.csproj").withReference(marten).waitFor(marten);
 
 await builder.build().run();

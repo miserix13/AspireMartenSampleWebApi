@@ -16,6 +16,7 @@
     }
   },
   "packages": {
-    "Aspire.Hosting.PostgreSQL": "13.6.0"
+    "Aspire.Hosting.PostgreSQL": "13.6.0",
+    "WebApi": "../AspireMartenSampleWebApi/AspireMartenSampleWebApi.csproj"
   }
 }
