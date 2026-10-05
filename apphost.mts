@@ -9,4 +9,9 @@ const builder = await createBuilder();
 // const redis = await builder.addContainer("cache", "redis:latest");
 // const postgres = await builder.addPostgres("db");
 
+const postgres = await builder.addPostgres("postgres").withDataVolume();
+const marten = await postgres.addDatabase("marten");
+
+const api = await builder.addProject("api", "./AspireMartenSampleWebApi").withReference(marten).waitFor(marten);
+
 await builder.build().run();
